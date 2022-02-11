@@ -1,4 +1,4 @@
-# 10 II 2022, 0.2
+# 11 II 2022, 0.2
 
 input_string = input('Enter the words you want to check seperated by spaces (NOT COMMAS): \n') 
 words = input_string.split() 
