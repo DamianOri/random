@@ -14,15 +14,15 @@ print(x.replace('u', 'w'))
 
 # Potato counter
 
-i = 0                           # Sets up the potato counter
+i = 0
 x = True
-while(x == True):               # The loop goes on for as long as x = True
-    word = str.lower(input())   # The input is turned all lowercase so typing POTATO still counts
-    if(word == "potato"):       # If you wrote potato
-        i = i + 1               # The counter goes up by one
-    elif(word == "exit"):       # If you type exit
-        x = False               # x is now not equal to True, therefore after printing the potato count the loop ends and the program closes
-    else:                       # If you didn't
-        i = i                   # The counter stays the same
-    print(f"Potato count: {i}") # After typing a word it prints the state of the counter and goes back to the beginning of the loop
-input("Press ENTER to leave")   # It now doesnt' close automatically
+while(x == True):
+    word = str.lower(input())
+    if(word == "potato"):
+        i = i + 1
+    elif(word == "exit"):
+        x = False
+    else:
+        i = i
+    print(f"Potato count: {i}")
+input("Press ENTER to leave")
