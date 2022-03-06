@@ -1,7 +1,7 @@
 # Fast Inverse Square Root
-x = input()
-print(x**-0.5)
-
+def invSqrt(x):
+    print(x**-0.5)
+    
 # Spelling out words
 word = input()
 print(list(word))
@@ -26,3 +26,11 @@ while(x == True):
         i = i
     print(f"Potato count: {i}")
 input("Press ENTER to leave")
+
+# isEven
+
+def isEven(x):
+    if(x%2==0):
+        return True
+    else:
+        return False
