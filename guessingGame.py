@@ -4,12 +4,14 @@ import random
 a = 0
 x = random.randint(1, 100)
 
-print("In this \"game\" you need to guess a randomly generated number.\nThankfully your job is made a bit easier by the computer telling you if your guess is too high or too low")
+print("In this \"game\" you need to guess a randomly generated number from 1 to 100.\nThankfully your job is made a bit easier by the computer telling you if your guess is too high or too low")
 
 while True:
     a += 1
     y = input("Input a guess: ")
-    if(int(y) < x):
+    if(y.isdigit() == False):
+        print("Input an integer, smh.")
+    elif(int(y) < x):
         print("Too low")
     elif(int(y) > x):
         print("Too high")
