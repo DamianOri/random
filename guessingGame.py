@@ -1,5 +1,5 @@
-# Guessing game
-# Damian, 08-07-2023
+# Guessing game v1.1
+# Damian, 13-07-2023
 import random
 a = 0
 x = random.randint(1, 100)
@@ -9,7 +9,9 @@ print("In this \"game\" you need to guess a randomly generated integer from 1 to
 while True:
     a += 1
     y = input("Input a guess: ")
-    if(y.isdigit() == False):
+    if(y.lower() == "exit"):
+        quit()
+    elif(y.isdigit() == False):
         print("Input an integer, smh.")
     elif(int(y) < x):
         print("Too low")
