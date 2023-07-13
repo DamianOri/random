@@ -9,7 +9,7 @@ print("In this \"game\" you need to guess a randomly generated integer from 1 to
 while True:
     count += 1
     guess = input("Input a guess: ")
-    if(guess.lower() == "exit"):
+    if(guess.lower() == "exit"):                    # Used .lower() to make the input case-insensitive
         quit()
     elif(guess.isdigit() == False):
         print("Input an integer, smh.")
